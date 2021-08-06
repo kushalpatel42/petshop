@@ -14,12 +14,13 @@ function check(form){
      
       title:"Dog food",
       image:"img/dogfood/81U6D983SxL._AC_SL1500_.jpg",
-      price: "$29.99"
+      price:"$29.99",
+
     },
     {
       image:"./img/dogfood/dog treat.jpg",
       title:"Dog Treat",
-      price:"$29.99",
+      price:"1mil",
 
     },
     {
@@ -86,8 +87,8 @@ function check(form){
  
   var postHTML = "";
   for(let i = 0; i < product.length; i++){
-    let div = '<div class="col-lg-3 col-md-2 col-sm-4 update-card sale-item-small"> <div class="card-product" style="width: 18rem;" > ';
-    let image = ' <img src=" ' + product[i].image + '" class="card-img-top" alt="product">';
+    let div = '<div class="col-lg-3 col-md-6 col-sm-12 update-card sale-item-small"> <div class="card-product" style="width: 18rem;" > ';
+    let image = '<img src=" ' + product[i].image + '" class="card-img-top" alt="product">';
     let cardBody = '<div class="card-body"><h5 class="card-title"> '+ 
     product[i].title + '</h5> <p class="card-text-price lead"><strike strike class=""> $59.99</strike>  <button type="button" class="btn btn-lg btn-block btn-primary">BUY   </button>' + product[i].price  + '</p></div></div></div>'
     let concatThis = div + image + cardBody;

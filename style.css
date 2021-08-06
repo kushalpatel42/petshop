@@ -1,11 +1,11 @@
 body {
-    background-color: #ffffff !important;
+    background-color: #a8dadb !important;
     color: #4a6362;
     font-family:sans-serif;
     height: 100%;
     background-image: url();
     background-size: 80%;
-    
+	padding-top: 56px;
 }
 
 
@@ -34,7 +34,6 @@ nav {
     width: 100%;
     padding-top: 55px;
 }
-
 
 
 
@@ -98,21 +97,35 @@ nav {
 #market{
 	display: flex;
 	color: #000;
-	height: fit-content;
-	width: fit-content;
-	
+	height: 100%;
+	width: 100%;
+	/* border-collapse: separate;
+	border-spacing: 50px 50px; */
 	flex-wrap: wrap;
+	
+	
 }
 
 .card-product {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 16px;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+	padding: 5px;
 	text-align: center;
 	background-color: #f1f1f1;
-    height: 95%; 
-	
+    height: 95%;
+	 
+	display: flex;
+	flex-wrap: wrap;
+	/* border-collapse: separate;
+	border-spacing: 50px 50px; */
+	/* display: table-cell; */
 }
-
+/* about */
+.centered-about {
+	position: absolute;
+	top: 57%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
 
 /* contact */
 .my-form {
@@ -168,11 +181,11 @@ h3{
   }
   
   
-  .row::after {
+  /* .row::after {
 	content: "";
 	clear: both;
 	display: table;
-  }
+  } */
 
 
 .column {
@@ -250,10 +263,25 @@ footer {
 	text-align: center;
 	padding: 2rem;
 }
+.main-header-about{
+	height: 55vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem;
+}
 
 
 
 .main-header h1 span{
+	font-size: 4rem;
+	margin-bottom: 2rem;
+	line-height: 1.2;
+	color: #3b7580;
+}
+.main-header-about h1 span{
 	font-size: 4rem;
 	margin-bottom: 2rem;
 	line-height: 1.2;
@@ -293,5 +321,12 @@ order: 2;
 .about-card{
 	display: block;
 }
+}}
+#buyButton{
+	position: relative;
+
 }
+
+
+
 	
