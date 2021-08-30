@@ -395,3 +395,7 @@ h3{
   text-align: center;
   background-color: #f1f1f1;
 }
+
+.carousel .carousel-item {
+    transition-duration: 1.0s;
+}

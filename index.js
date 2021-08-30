@@ -20,7 +20,7 @@ function check(form){
     {
       image:"./img/dogfood/dog treat.jpg",
       title:"Dog Treat",
-      price:"1mil",
+      price:"$29.99",
 
     },
     {
